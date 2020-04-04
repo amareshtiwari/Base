@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<config>
+    <default>
+        <basesection>
+            <base>
+                <basejquery>1</basejquery>
+            </base>
+        </basesection>
+    </default>
+    <modules>
+        <Codesbug_Base>
+            <version>0.1.0</version>
+        </Codesbug_Base>
+    </modules>
+     <adminhtml>
+        
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <basesection translate="title" module="base">  <!-- This is name of the section created by us -->
+                                            <title>Base Setting</title>  <!-- Title as shown in User->Roles->Permissions Window -->
+                                            <sort_order>99</sort_order>
+                                        </basesection>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+         <layout>
+            <updates>
+                <base>
+                    <file>base.xml</file>
+                </base>
+            </updates>
+        </layout>
+    </adminhtml>   
+    <global>
+        <models>
+            <base>
+                <class>Codesbug_Base_Model</class>
+                <resourceModel>base_value</resourceModel>
+            </base>   
+        </models>
+        <resources>
+            <base_setup>
+                <setup>
+                    <module>Codesbug_Base</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </base_setup>
+            <base_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </base_write>
+            <base_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </base_read>
+        </resources>
+        <blocks>
+            <base>
+                <class>Codesbug_Base_Block</class>
+            </base>
+        </blocks>
+        <helpers>
+            <base>
+                <class>Codesbug_Base_Helper</class>
+            </base>
+        </helpers>
+    </global>
+</config>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Codesbug_Base</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="https://opensource.org/licenses/OSL-3.0">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This is base module for all Codesbug modules</summary>
+    <description>This is base module for all Codesbug modules</description>
+    <notes>First release</notes>
+    <authors><author><name>Amaresh Tiwari</name><user>amareshtiwari</user><email>codesbug@gmail.com</email></author></authors>
+    <date>2020-4-4</date>
+    <time>07:39:10</time>
+    <contents><target name="mageweb"><dir name="js"><dir name="jquery"><file name="jquery-2.1.4.min.js" hash="8595c4c55c8f9e35bb46bbbcd4787c33"/></dir></dir></target><target name="magecommunity"><dir name="Codesbug"><dir name="Base"><dir name="Helper"><file name="Data.php" hash="c7d24e2dd7ceec5c0d51b6592d5042e2"/></dir><dir name="Model"><file name="Abstract.php" hash="06a70744576c7a8c7fbde030c868c917"/><file name="Observer.php" hash="4ef4fcb2bbff442b25e1d85e4d027a85"/><dir name="Rule"><dir name="Condition"><file name="Address.php" hash="1691b467a257e59df9f712cb6bc33fc5"/><file name="Combine.php" hash="64f050108f7772427a1a59da0d22ca30"/><file name="Customer.php" hash="9322d9d94edc363d0856980c838678fe"/><file name="Product.php" hash="92b74c74b06d9de9d0df13f7dd61ee7f"/></dir></dir><file name="Rules.php" hash="65abab0f9b9d4966b242df5eeada195c"/></dir><dir name="etc"><file name="config.xml" hash="5c77e118a3c4708512b718983e1ad784"/><file name="system.xml" hash="ad3d16f38fd9ced6b95b976cb47efe9a"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Excellence_Base.xml" hash="14b01c697079959bfa410245bcf40a38"/></dir></target><target name="magedesign"><dir><dir name="var"><dir name="www"><dir name="html"><dir name="allmodules"><dir name="base"><dir name="app"><dir name="design"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="base.xml" hash=""/></dir></dir></dir></dir></dir></dir></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
